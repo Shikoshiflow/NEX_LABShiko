@@ -158,7 +158,7 @@ ul { list-style: none; }
 .hero-section { min-height: 100vh; display: flex; align-items: center; padding-top: 70px; position: relative; }
 .hero-content { max-width: 800px; z-index: 2; }
 
-.terminal-text { font-family: var(--font-code); color: #0aff0a; margin-bottom: 20px; font-size: 20px; font-weight: 600; letter-spacing: 1px; text-shadow: 0 0 8px rgba(10, 255, 10, 0.4); }
+.terminal-text { font-family: var(--font-code); color: #00f3ff; margin-bottom: 20px; font-size: 20px; font-weight: 600; letter-spacing: 1px; text-shadow: 0 0 8px rgba(10, 255, 10, 0.4); }
 .terminal-text::after { content: '_'; display: inline-block; margin-left: 5px; animation: blink-cursor 1s infinite; color: var(--neon-pink); }
 @keyframes blink-cursor { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
 
@@ -664,4 +664,5 @@ html { scrollbar-width: thin; scrollbar-color: var(--neon-cyan) #050505; }
     .glitch-title { font-size: 32px !important; }
     .lang-switch { margin-right: 10px; }
     .lang-btn { padding: 6px 10px; font-size: 12px; }
+
 }
