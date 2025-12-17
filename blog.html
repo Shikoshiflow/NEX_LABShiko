@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX_LAB | System Logs</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><style>text{font:bold 70px monospace;fill:%2300f3ff;text-shadow:0 0 5px %2300f3ff;}</style><rect width='100' height='100' fill='%2308080a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle'>N_</text></svg>">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="cyber-bg">
+        <div class="cyber-line" style="--i:0;"></div>
+        <div class="cyber-line" style="--i:1;"></div>
+        <div class="cyber-line" style="--i:2;"></div>
+        <div class="cyber-line" style="--i:3;"></div>
+        <div class="cyber-line" style="--i:4;"></div>
+        <div class="cyber-line" style="--i:5;"></div>
+        <div class="cyber-line" style="--i:6;"></div>
+        <div class="cyber-line" style="--i:7;"></div>
+        <div class="cyber-line" style="--i:8;"></div>
+        <div class="cyber-line" style="--i:9;"></div>
+        <div class="cyber-line" style="--i:10;"></div>
+        <div class="cyber-line" style="--i:11;"></div>
+        <div class="cyber-line" style="--i:12;"></div>
+        <div class="cyber-line" style="--i:13;"></div>
+    </div>
+
+    <header class="cyber-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html" style="text-decoration:none;">
+                    <span class="logo-prefix">NEX_</span><span class="logo-main">LAB</span>
+                </a>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html#hero" class="nav-link" data-i18n="nav_system">.system()</a></li>
+                    <li><a href="index.html#about" class="nav-link" data-i18n="nav_data">.data()</a></li>
+                    <li><a href="index.html#projects" class="nav-link" data-i18n="nav_works">.works()</a></li>
+                    <li><a href="blog.html" class="nav-link active" data-i18n="nav_log">.log()</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-controls">
+                <div class="lang-switch">
+                    <button class="lang-btn active" onclick="setLanguage('ru')">RU</button>
+                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                </div>
+
+                <a href="https://t.me/ShypherLab" target="_blank" class="cyber-btn-small" data-i18n="conn_btn">CONNECTION</a>
+                <div class="burger-menu" id="burgerBtn">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="blog-hero">
+        <div class="container">
+            <h1 class="glitch-title" style="font-size: 50px;">SYSTEM_LOGS</h1>
+            <p class="subtitle" style="border:none; padding:0;" data-i18n="blog_subtitle">// REPOSITORY OF THOUGHTS AND CODE</p>
+        </div>
+    </section>
+
+    <section class="blog-feed">
+        <div class="container">
+            <div class="logs-grid">
+                
+                <article class="log-entry" onclick="openLog('post1')" style="cursor: pointer;">
+                    <div class="log-meta">
+                        <span class="date">2025.05.20</span>
+                        <span class="category">[ JS_CORE ]</span>
+                    </div>
+                    <h3 data-i18n="post1_title">OPTIMIZING_CANVAS_PARTICLES</h3>
+                    <p data-i18n="post1_preview">Разбор алгоритма создания системы частиц без просадки FPS. Использование OffscreenCanvas и оптимизация циклов...</p>
+                    <div class="log-footer">
+                        <span class="read-btn" data-i18n="read_btn">[ OPEN_FILE ]</span>
+                        <span class="file-size">42 KB</span>
+                    </div>
+                </article>
+
+                <article class="log-entry" onclick="openLog('post2')" style="cursor: pointer;">
+                    <div class="log-meta">
+                        <span class="date">2025.05.15</span>
+                        <span class="category">[ CYBER_UI ]</span>
+                    </div>
+                    <h3 data-i18n="post2_title">GLITCH_EFFECT_CSS_ONLY</h3>
+                    <p data-i18n="post2_preview">Как создать реалистичный эффект цифровых помех, используя только CSS keyframes и свойства clip-path...</p>
+                    <div class="log-footer">
+                        <span class="read-btn" data-i18n="read_btn">[ OPEN_FILE ]</span>
+                        <span class="file-size">12 KB</span>
+                    </div>
+                </article>
+
+                <article class="log-entry" onclick="openLog('post3')" style="cursor: pointer;">
+                    <div class="log-meta">
+                        <span class="date">2025.04.10</span>
+                        <span class="category">[ WORKFLOW ]</span>
+                    </div>
+                    <h3 data-i18n="post3_title">VS_CODE_SETUP_V2</h3>
+                    <p data-i18n="post3_preview">Мой конфиг для продуктивной разработки. Список плагинов, тема SynthWave '84 и настройки шрифтов...</p>
+                    <div class="log-footer">
+                        <span class="read-btn" data-i18n="read_btn">[ OPEN_FILE ]</span>
+                        <span class="file-size">5 KB</span>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="cyber-footer">
+        <div class="footer-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">NEX_<span class="accent">LAB</span></div>
+                    <p class="copyright" data-i18n="copyright">&copy; 2025 Shikoshi Dev.<br>All systems operational.</p>
+                </div>
+                <div class="footer-col nav-col">
+                    <a href="index.html" class="footer-link" data-i18n="footer_home">Return to Base</a>
+                </div>
+                <div class="footer-col status-col">
+                    <div class="system-box">
+                        <span class="status-dot"></span>
+                        <span class="status-text">LOGS: ARCHIVED</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="log-modal" class="modal-overlay">
+        <div class="modal-window">
+            
+            <div class="modal-header">
+                <div class="modal-title">
+                    <span class="blink">></span> SYSTEM_VIEWER_V1.0
+                </div>
+                <button class="close-btn" onclick="closeLog()" data-i18n="close_btn">[ X ] CLOSE</button>
+            </div>
+            
+            <div class="modal-content">
+                <h2 id="modal-heading">TITLE_HOLDER</h2>
+                <div class="modal-meta" id="modal-date">DATE_HOLDER</div>
+                <div class="modal-body" id="modal-text">
+                    </div>
+            </div>
+
+            <div class="modal-scanline"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

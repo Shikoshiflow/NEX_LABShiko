@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEX_LAB | Shikoshi Dev</title>
+    
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><style>text{font:bold 70px monospace;fill:%2300f3ff;text-shadow:0 0 5px %2300f3ff;}</style><rect width='100' height='100' fill='%2308080a'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle'>N_</text></svg>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Orbitron:wght@400;700;900&family=Roboto+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="cyber-preloader">
+        <div class="cyber-bg preloader-bg">
+            <div class="cyber-line" style="--i:0;"></div>
+            <div class="cyber-line" style="--i:1;"></div>
+            <div class="cyber-line" style="--i:2;"></div>
+            <div class="cyber-line" style="--i:3;"></div>
+            <div class="cyber-line" style="--i:4;"></div>
+            <div class="cyber-line" style="--i:5;"></div>
+            <div class="cyber-line" style="--i:6;"></div>
+            <div class="cyber-line" style="--i:7;"></div>
+            <div class="cyber-line" style="--i:8;"></div>
+            <div class="cyber-line" style="--i:9;"></div>
+            <div class="cyber-line" style="--i:10;"></div>
+            <div class="cyber-line" style="--i:11;"></div>
+            <div class="cyber-line" style="--i:12;"></div>
+            <div class="cyber-line" style="--i:13;"></div>
+        </div>
+        
+        <div class="preloader-content">
+            <canvas id="logo-canvas"></canvas>
+            
+            <div class="scanner-line"></div>
+            <div class="system-text">
+                <span class="prefix">NEX_SYS:</span> INITIALIZING_CORE...
+            </div>
+            <div class="loader-bar-wrap">
+                <div class="loader-bar" id="loaderProgress"></div>
+            </div>
+            <div class="status-msg">ACCESS_GRANTED</div>
+        </div>
+    </div>
+
+    <div class="cyber-bg">
+        <div class="cyber-line" style="--i:0;"></div>
+        <div class="cyber-line" style="--i:1;"></div>
+        <div class="cyber-line" style="--i:2;"></div>
+        <div class="cyber-line" style="--i:3;"></div>
+        <div class="cyber-line" style="--i:4;"></div>
+        <div class="cyber-line" style="--i:5;"></div>
+        <div class="cyber-line" style="--i:6;"></div>
+        <div class="cyber-line" style="--i:7;"></div>
+        <div class="cyber-line" style="--i:8;"></div>
+        <div class="cyber-line" style="--i:9;"></div>
+        <div class="cyber-line" style="--i:10;"></div>
+        <div class="cyber-line" style="--i:11;"></div>
+        <div class="cyber-line" style="--i:12;"></div>
+        <div class="cyber-line" style="--i:13;"></div>
+    </div>
+
+    <header class="cyber-header">
+        <div class="container">
+            <div class="logo">
+                <span class="logo-prefix">NEX_</span><span class="logo-main">LAB</span>
+            </div>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#hero" class="nav-link" data-i18n="nav_system">.system()</a></li>
+                    <li><a href="#about" class="nav-link" data-i18n="nav_data">.data()</a></li>
+                    <li><a href="#projects" class="nav-link" data-i18n="nav_works">.works()</a></li>
+                    <li><a href="blog.html" class="nav-link" data-i18n="nav_log">.log()</a></li>
+                </ul>
+            </nav>
+            
+            <div class="header-controls">
+                <div class="lang-switch">
+                    <button class="lang-btn active" onclick="setLanguage('ru')">RU</button>
+                    <button class="lang-btn" onclick="setLanguage('en')">EN</button>
+                </div>
+                
+                <a href="https://t.me/ShypherLab" target="_blank" class="cyber-btn-small" data-i18n="conn_btn">CONNECTION</a>
+                <div class="burger-menu" id="burgerBtn">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="hero" class="hero-section">
+        <div class="container hero-content">
+            <p class="terminal-text"></p>
+            
+            <h1 class="glitch-title" data-text="SHIKOSHI">SHIKOSHI</h1>
+            <h2 class="subtitle" data-i18n="hero_subtitle">WEB_DEVELOPER__OPERATOR</h2>
+            
+            <div class="description" data-i18n="hero_desc">
+                Создаю цифровые миры на чистом коде. 
+                <br> Эстетика киберпанка и надежность архитектуры.
+            </div>
+
+            <div class="hero-buttons">
+                <a href="#projects" class="cyber-btn primary" data-i18n="btn_projects">СМОТРЕТЬ ПРОЕКТЫ</a>
+                <a href="https://t.me/ShypherLab" target="_blank" class="cyber-btn secondary" data-i18n="btn_tg">TELEGRAM</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <h3 class="section-title" data-i18n="sec_skills">SYSTEM_CORE <span class="accent">||</span> SKILLS</h3>
+            
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <div class="icon">HTML5</div>
+                    <h4 data-i18n="skill_struct">Structure</h4>
+                    <p data-i18n="skill_struct_desc">Семантическая и чистая верстка</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">CSS3</div>
+                    <h4 data-i18n="skill_visual">Visuals</h4>
+                    <p data-i18n="skill_visual_desc">Анимации, Grid, Flexbox, Neo-effects</p>
+                </div>
+                <div class="skill-card">
+                    <div class="icon">JS</div>
+                    <h4 data-i18n="skill_logic">Logic</h4>
+                    <p data-i18n="skill_logic_desc">Интерактивность без тяжелых библиотек</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h3 class="section-title" data-i18n="sec_works">DEPLOYED_UNITS <span class="accent">||</span> WORK</h3>
+            
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img">PROJECT_ALPHA</div>
+                    </div>
+                    <div class="project-info">
+                        <h4>PROJECT_ALPHA</h4>
+                        <p data-i18n="proj_alpha_desc">Корпоративный сайт в темных тонах.</p>
+                        <div class="tech-stack">
+                            <span>HTML</span> <span>CSS</span>
+                        </div>
+                        <a href="#" class="link-arrow" data-i18n="link_source">View Source -></a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder-img">NEON_LANDING</div>
+                    </div>
+                    <div class="project-info">
+                        <h4>NEON_LANDING</h4>
+                        <p data-i18n="proj_neon_desc">Лендинг пейдж с анимациями.</p>
+                        <div class="tech-stack">
+                            <span>JS</span> <span>Animation</span>
+                        </div>
+                        <a href="#" class="link-arrow" data-i18n="link_source">View Source -></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container text-center">
+            <h3 class="section-title" data-i18n="sec_contact">INITIATE_PROTOCOL</h3>
+            <p class="contact-desc" data-i18n="contact_desc">
+                Есть идея для проекта? Система готова к обработке заказа.
+                <br>Связь напрямую через зашифрованный канал.
+            </p>
+            
+            <a href="https://t.me/ShypherLab" target="_blank" class="cyber-btn big-btn" data-i18n="btn_tg_channel">
+                OPEN TELEGRAM CHANNEL
+            </a>
+            
+            <div class="social-group">
+                <span class="social-label" data-i18n="social_label">OR CONNECT VIA:</span>
+                <div class="social-buttons">
+                    <a href="mailto:shikoshiflow@gmail.com" class="social-btn">EMAIL</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="cyber-footer">
+        <div class="footer-line"></div>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">NEX_<span class="accent">LAB</span></div>
+                    <p class="copyright" data-i18n="copyright">&copy; 2025 Shikoshi Dev.<br>All systems operational.</p>
+                </div>
+                <div class="footer-col nav-col">
+                    <a href="#hero" class="footer-link" data-i18n="footer_home">Home</a>
+                    <a href="#projects" class="footer-link" data-i18n="footer_projects">Projects</a>
+                    <a href="#" class="footer-link" data-i18n="footer_privacy">Privacy Policy</a>
+                </div>
+                <div class="footer-col status-col">
+                    <div class="system-box">
+                        <span class="status-dot"></span>
+                        <span class="status-text" data-i18n="status_online">SYSTEM: ONLINE</span>
+                    </div>
+                    <div class="code-signature">No Trackers. Pure Code.</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
